@@ -22,6 +22,7 @@ built into the app leaves users on their last good copy. Still, check the JSON i
 | `rank` | Order on the home screen, lowest first. Change this to reorder. |
 | `category` | `jobs`, `admission`, `passport`, `nid`, `visa` or `other`. |
 | `name`, `nameBn`, `note`, `noteBn` | Shown to users. Bangla falls back to English when empty. |
+| `keywords` | Optional. Other words people might search for, in English or Bangla (`"PSC"`, `"গুচ্ছ"`). Never shown; matching ignores case, spaces and punctuation. |
 | `source`, `verifiedOn` | The official page the rule was read from, and when. Shown to users. |
 | `photo`, `signature` | Optional. `width`, `height`, `maxKB`, optional `minKB` and `colourRequired`. Omit both for an information-only entry, which then needs a `note`. |
 

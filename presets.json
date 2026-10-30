@@ -1,6 +1,13 @@
 {
-  "schema": 2,
-  "updated": "2026-10-22",
+  "schema": 3,
+  "categories": [
+    { "id": "jobs", "name": "Jobs", "nameBn": "চাকরি", "icon": "work" },
+    { "id": "admission", "name": "Admission", "nameBn": "ভর্তি", "icon": "school" },
+    { "id": "nid", "name": "NID", "nameBn": "এনআইডি", "icon": "badge" },
+    { "id": "visa", "name": "Visa", "nameBn": "ভিসা", "icon": "flight" },
+    { "id": "other", "name": "Other", "nameBn": "অন্যান্য", "icon": "description" }
+  ],
+  "updated": "2026-10-31",
   "presets": [
     {
       "id": "bcs",
@@ -9,12 +16,14 @@
       "name": "BCS (BPSC)",
       "nameBn": "বিসিএস (বিপিএসসি)",
       "keywords": ["BPSC", "PSC", "public service commission", "cadre", "পিএসসি", "বিপিএসসি", "পাবলিক সার্ভিস কমিশন", "ক্যাডার", "বিসিএস পরীক্ষা"],
-      "note": "Checked against the official BPSC validator for the 51st BCS.",
-      "noteBn": "৫১তম বিসিএসের অফিশিয়াল বিপিএসসি ভ্যালিডেটরে যাচাই করা।",
+      "note": "Common size for BCS applications. Check your circular.",
+      "noteBn": "বিসিএস আবেদনের প্রচলিত মাপ। আপনার বিজ্ঞপ্তি দেখে নিন।",
       "source": "https://bpsc.teletalk.com.bd/bcs51/validator.php",
       "verifiedOn": "2026-10-21",
-      "photo": { "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
-      "signature": { "width": 300, "height": 80, "maxKB": 60 }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
     },
     {
       "id": "teletalk",
@@ -23,12 +32,14 @@
       "name": "Govt. jobs (Teletalk)",
       "nameBn": "সরকারি চাকরি (টেলিটক)",
       "keywords": ["Teletalk", "govt job", "sorkari chakri", "alljobs", "টেলিটক", "সরকারি", "চাকরির আবেদন", "নিয়োগ"],
-      "note": "The standard rule on teletalk.com.bd job portals. Check your circular, because some posts differ.",
-      "noteBn": "teletalk.com.bd-এর চাকরির পোর্টালের সাধারণ নিয়ম। কিছু পদে ভিন্ন হতে পারে, তাই আপনার বিজ্ঞপ্তি দেখে নিন।",
+      "note": "A common size on online job portals. Check your circular, because some posts differ.",
+      "noteBn": "অনলাইন চাকরির পোর্টালের প্রচলিত মাপ। কিছু পদে ভিন্ন হতে পারে, তাই আপনার বিজ্ঞপ্তি দেখে নিন।",
       "source": "http://bps.teletalk.com.bd/validator.php",
       "verifiedOn": "2026-10-22",
-      "photo": { "width": 300, "height": 300, "maxKB": 100, "minKB": 4, "colourRequired": true },
-      "signature": { "width": 300, "height": 80, "maxKB": 60, "minKB": 3 }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "minKB": 4, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60, "minKB": 3 }
+      ]
     },
     {
       "id": "ntrca",
@@ -37,12 +48,14 @@
       "name": "NTRCA teacher registration",
       "nameBn": "এনটিআরসিএ শিক্ষক নিবন্ধন",
       "keywords": ["NTRCA", "teacher", "nibondhon", "nibandhan", "registration", "শিক্ষক", "নিবন্ধন", "এনটিআরসিএ"],
-      "note": "Checked against the NTRCA validator on Teletalk.",
-      "noteBn": "টেলিটকে এনটিআরসিএ-এর ভ্যালিডেটরে যাচাই করা।",
+      "note": "Common size for NTRCA applications. Check your circular.",
+      "noteBn": "এনটিআরসিএ আবেদনের প্রচলিত মাপ। আপনার বিজ্ঞপ্তি দেখে নিন।",
       "source": "http://ntrca.teletalk.com.bd/validator.php",
       "verifiedOn": "2026-10-22",
-      "photo": { "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
-      "signature": { "width": 300, "height": 80, "maxKB": 60 }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
     },
     {
       "id": "du-colleges",
@@ -51,11 +64,13 @@
       "name": "DU affiliated colleges admission",
       "nameBn": "ঢাবি অধিভুক্ত কলেজে ভর্তি",
       "keywords": ["DU", "Dhaka University", "affiliated", "honours", "degree", "ঢাকা বিশ্ববিদ্যালয়", "ঢাবি", "অধিভুক্ত", "অনার্স", "কলেজ"],
-      "note": "The portal asks for a photo 460–480 px wide and 600–620 px tall, 30–200 KB. No signature upload.",
-      "noteBn": "পোর্টালে ছবি চওড়ায় ৪৬০–৪৮০ ও উচ্চতায় ৬০০–৬২০ পিক্সেল, ৩০–২০০ KB চাওয়া হয়। স্বাক্ষর লাগে না।",
+      "note": "The form asks for a photo 460–480 px wide and 600–620 px tall, 30–200 KB. No signature upload.",
+      "noteBn": "ফর্মে ছবি চওড়ায় ৪৬০–৪৮০ ও উচ্চতায় ৬০০–৬২০ পিক্সেল, ৩০–২০০ KB চাওয়া হয়। স্বাক্ষর লাগে না।",
       "source": "https://collegeadmission.eis.du.ac.bd/en/",
       "verifiedOn": "2026-10-22",
-      "photo": { "width": 470, "height": 610, "maxKB": 200, "minKB": 30, "colourRequired": true }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 470, "height": 610, "maxKB": 200, "minKB": 30, "colourRequired": true }
+      ]
     },
     {
       "id": "admission-teletalk",
@@ -64,12 +79,14 @@
       "name": "University admission (Teletalk)",
       "nameBn": "বিশ্ববিদ্যালয় ভর্তি (টেলিটক)",
       "keywords": ["varsity", "university", "admission", "guccho", "GST", "বিশ্ববিদ্যালয়", "ভার্সিটি", "গুচ্ছ", "ভর্তি পরীক্ষা"],
-      "note": "The usual rule on admission portals hosted by Teletalk. Check your admission circular, because some universities differ.",
-      "noteBn": "টেলিটকের ভর্তি পোর্টালের সাধারণ নিয়ম। কিছু বিশ্ববিদ্যালয়ে ভিন্ন হতে পারে, তাই ভর্তি বিজ্ঞপ্তি দেখে নিন।",
+      "note": "A common size on online admission portals. Check your admission circular, because some universities differ.",
+      "noteBn": "অনলাইন ভর্তি পোর্টালের প্রচলিত মাপ। কিছু বিশ্ববিদ্যালয়ে ভিন্ন হতে পারে, তাই ভর্তি বিজ্ঞপ্তি দেখে নিন।",
       "source": "http://aaub.teletalk.com.bd/mba/options/help.php",
       "verifiedOn": "2026-10-22",
-      "photo": { "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
-      "signature": { "width": 300, "height": 80, "maxKB": 60 }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
     },
     {
       "id": "police",
@@ -78,24 +95,29 @@
       "name": "Bangladesh Police",
       "nameBn": "বাংলাদেশ পুলিশ",
       "keywords": ["police", "SI", "sub inspector", "পুলিশ", "এসআই", "সাব-ইন্সপেক্টর"],
-      "note": "Checked against the Police SI recruitment validator on Teletalk.",
-      "noteBn": "টেলিটকে পুলিশের এসআই নিয়োগের ভ্যালিডেটরে যাচাই করা।",
+      "note": "Common size for Police recruitment applications. Check your circular.",
+      "noteBn": "পুলিশ নিয়োগ আবেদনের প্রচলিত মাপ। আপনার বিজ্ঞপ্তি দেখে নিন।",
       "source": "http://police.teletalk.com.bd/si/validator.php",
       "verifiedOn": "2026-10-22",
-      "photo": { "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
-      "signature": { "width": 300, "height": 80, "maxKB": 60 }
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
     },
     {
-      "id": "epassport",
+      "id": "india-visa",
       "rank": 70,
-      "category": "passport",
-      "name": "e-Passport",
-      "nameBn": "ই-পাসপোর্ট",
-      "keywords": ["passport", "e passport", "MRP", "পাসপোর্ট", "ই পাসপোর্ট"],
-      "note": "The e-passport form needs no photo: it is taken at the passport office when you apply. Only applicants under 6 bring a 3R lab print with a grey background.",
-      "noteBn": "ই-পাসপোর্ট ফরমে কোনো ছবি লাগে না, আবেদনের সময় পাসপোর্ট অফিসেই ছবি তোলা হয়। শুধু ৬ বছরের কম বয়সীদের জন্য ৩আর সাইজের ল্যাব প্রিন্ট (ধূসর ব্যাকগ্রাউন্ড) ছবি জমা দিতে হয়।",
-      "source": "https://www.epassport.gov.bd/instructions/instructions",
-      "verifiedOn": "2026-10-22"
+      "category": "visa",
+      "name": "Indian visa",
+      "nameBn": "ভারতীয় ভিসা",
+      "keywords": ["india", "indian", "IVAC", "visa", "ভারত", "ভারতীয়", "আইভ্যাক", "ভিসা"],
+      "note": "The Indian visa portal wants a square JPEG photo, 10–300 KB. It sets no pixel size, so we make 350×350. The passport page scan (PDF) is not covered here.",
+      "noteBn": "ভারতীয় ভিসা পোর্টালে বর্গাকার JPEG ছবি লাগে, ১০–৩০০ KB। পিক্সেল মাপ নির্দিষ্ট করা নেই, তাই আমরা ৩৫০×৩৫০ বানাই। পাসপোর্টের পাতার স্ক্যান (PDF) এখানে নেই।",
+      "source": "https://indianvisaonline.gov.in/visa/instruction.html",
+      "verifiedOn": "2026-10-31",
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 350, "height": 350, "maxKB": 300, "minKB": 10, "colourRequired": true }
+      ]
     }
   ]
 }

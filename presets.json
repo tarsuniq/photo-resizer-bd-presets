@@ -42,6 +42,22 @@
       ]
     },
     {
+      "id": "dpe-teacher",
+      "rank": 25,
+      "category": "jobs",
+      "name": "Primary assistant teacher (DPE)",
+      "nameBn": "প্রাথমিক সহকারী শিক্ষক (ডিপিই)",
+      "keywords": ["DPE", "primary", "assistant teacher", "prathomik", "প্রাথমিক", "সহকারী শিক্ষক", "ডিপিই", "প্রাইমারি"],
+      "note": "The DPE instructions ask for a 300×300 colour photo and a 300×80 signature. They give no KB limit, so we keep files under Teletalk's usual 100 KB and 60 KB.",
+      "noteBn": "ডিপিই-র নির্দেশনায় ৩০০×৩০০ রঙিন ছবি ও ৩০০×৮০ স্বাক্ষর চাওয়া হয়েছে। KB সীমা দেওয়া নেই, তাই আমরা টেলিটকের প্রচলিত ১০০ KB ও ৬০ KB-র মধ্যে রাখি।",
+      "source": "http://dpe.teletalk.com.bd/docs/DPE-Application-Instructions.pdf",
+      "verifiedOn": "2026-10-31",
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
+    },
+    {
       "id": "ntrca",
       "rank": 30,
       "category": "jobs",
@@ -73,6 +89,21 @@
       ]
     },
     {
+      "id": "nu-honours",
+      "rank": 45,
+      "category": "admission",
+      "name": "National University honours admission",
+      "nameBn": "জাতীয় বিশ্ববিদ্যালয় অনার্স ভর্তি",
+      "keywords": ["NU", "National University", "honours", "honors", "jatiyo", "জাতীয় বিশ্ববিদ্যালয়", "জাবি", "অনার্স", "স্নাতক", "ভর্তি"],
+      "note": "The NU circular asks for a 120×150 colour passport photo, JPG, at most 50 KB. No signature upload.",
+      "noteBn": "জাতীয় বিশ্ববিদ্যালয়ের বিজ্ঞপ্তিতে ১২০×১৫০ পিক্সেলের রঙিন পাসপোর্ট ছবি, JPG, সর্বোচ্চ ৫০ KB চাওয়া হয়েছে। স্বাক্ষর লাগে না।",
+      "source": "http://app1.nu.edu.bd/notice/HONS_Circular.pdf",
+      "verifiedOn": "2026-10-31",
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 120, "height": 150, "maxKB": 50, "colourRequired": true }
+      ]
+    },
+    {
       "id": "admission-teletalk",
       "rank": 50,
       "category": "admission",
@@ -83,6 +114,22 @@
       "noteBn": "অনলাইন ভর্তি পোর্টালের প্রচলিত মাপ। কিছু বিশ্ববিদ্যালয়ে ভিন্ন হতে পারে, তাই ভর্তি বিজ্ঞপ্তি দেখে নিন।",
       "source": "http://aaub.teletalk.com.bd/mba/options/help.php",
       "verifiedOn": "2026-10-22",
+      "fields": [
+        { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
+        { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
+      ]
+    },
+    {
+      "id": "mbbs-bds",
+      "rank": 55,
+      "category": "admission",
+      "name": "MBBS & BDS admission (DGME)",
+      "nameBn": "মেডিকেল ও ডেন্টাল ভর্তি (ডিজিএমই)",
+      "keywords": ["MBBS", "BDS", "medical", "dental", "DGME", "DGHS", "মেডিকেল", "ডেন্টাল", "এমবিবিএস", "বিডিএস", "ডিজিএমই"],
+      "note": "The DGME validator asks for a 300×300 colour photo up to 100 KB and a 300×80 signature up to 60 KB.",
+      "noteBn": "ডিজিএমই-র ভ্যালিডেটরে ৩০০×৩০০ রঙিন ছবি (সর্বোচ্চ ১০০ KB) ও ৩০০×৮০ স্বাক্ষর (সর্বোচ্চ ৬০ KB) চাওয়া হয়।",
+      "source": "http://dgme.teletalk.com.bd/mbbs/validator.php",
+      "verifiedOn": "2026-10-31",
       "fields": [
         { "id": "photo", "kind": "photo", "width": 300, "height": 300, "maxKB": 100, "colourRequired": true },
         { "id": "signature", "kind": "signature", "width": 300, "height": 80, "maxKB": 60 }
